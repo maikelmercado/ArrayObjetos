@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    //permite tener un array procesado en base a otro array
+    //los arreglos siempre deben ir en plural
+
+
+var clientes = [
+    {nombre: 'Juan', edad: 28}, 
+    {nombre: 'Carlos', edad: 17}, 
+    {nombre: 'Karla', edad: 27},
+];
+    clientes_modificado = clientes.map(
+        function(cliente) {
+            if (cliente.edad >= 18) 
+                { cliente.adulto = true;
+            } else {
+                cliente.adulto = false;
+            }
+        return cliente;
+    });
+        console.log(clientes_modificado);
+
+//Multiplicando
+    var numeros = [10,15,20,25,30];
+        numeros_nuevo = numeros.map(function(num) {
+        return num * 2; });
+            console.log(numeros_nuevo);
+</script>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    //Uso del operador this dentro de un Objeto hace referencia a su objeto
+
+    let automovil = { 
+        marca: {
+        nombre: 'Mazda',
+        origen: 'Japón'
+        },
+        modelo: '3 sport', 
+        patente: 'LJKH63', 
+        color: 'azul', 
+        kilometraje: 15000, 
+        usado: false, 
+        encender: function(){
+        alert('automóvil ' + this.marca.nombre + ' '  + this.modelo + ' encendido.'); //va buscar
+        } 
+    };
+
+
+    //Crear una función dentro del objeto que muestre los valores de raza, edad y el nombre del propietario. 
+    //La función debe ser parte de un elemento denominado “datos” y se debe mostrar el siguiente mensaje:
+    // “La raza del perro es pastor Alemán, tiene una edad de 11 años y el propietario es Juan”. El objeto a trabajar es:
+
+    let perro = { 
+        propietario: {
+            nombre: 'Juan',
+            edad: 34,
+            lugar:{
+            pais: 'Chile',
+            ciudad: 'Santiago de Chile'
+            },
+        },
+        raza: 'Pastor Alemán',
+        origen: 'Alemania',
+        pelaje: 'Lanudo',
+        peso: '30kg',
+        edad: 11,
+        amigable: true, 
+        datos: function(){
+        console.log(`La raza del perro es ${this.raza}, 
+        tiene una edad de ${this.edad} 
+        años y el propietario es ${this.propietario.nombre}`);
+        } 
+    };
+
+    perro.datos();
+    
+    
+
+
+
+
+
+</script>
+</html>         

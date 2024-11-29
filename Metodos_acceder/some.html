@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    // Nos permite verificar si algún objeto o elemento dentro de un array cumple con alguna condición que nosotros queramos verificar, 
+    //es decir, revisar si un arreglo contiene o no un valor.
+
+    var autos = [
+        {
+            marca: 'Toyota',
+            modelo: 'Corolla',
+            combustible: 'Gasolina'
+        }, {
+            marca: 'Mazda',
+            modelo: '3',
+            combustible: 'Gasolina'
+        },
+        {
+            marca: 'Honda',
+            modelo: 'Civic',
+            combustible: 'Gasolina'
+        },
+        {
+            marca: 'Bmw', modelo: '116d',
+            combustible: 'Diesel'
+        },
+    ];
+    var algunDiesel = autos.some(function (auto) {
+        return auto.combustible == 'Diesel'
+    });
+    console.log(algunDiesel);
+
+
+    var numeros = [1, 2, 3, 4, 5, 6, 7];
+    var algunMenorTres = numeros.some(function (num) {
+        return num < 3
+    });
+    console.log(algunMenorTres);   
+</script>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    // Nos permite obtener un objeto que ● La sintaxis básica de este método es: cumpla alguna condición que
+    // especifiquemos. Funciona de forma muy similar al método filter
+
+    var productos = [
+            { nombre: 'coca-cola',precio: 990 }, 
+            { nombre: 'papas fritas', precio: 590 }, 
+            { nombre: 'ramitas', precio: 290 }, 
+            { nombre: 'kapo', precio: 190 },
+        ];
+        var kapo = productos.find(function (producto) {
+            return producto.nombre == 'kapo'
+        }); 
+        console.log(kapo);
+</script>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse; }  
+    </style>
+ </head>
+    <body>
+        <table id="cuerpo-tabla"> </table>
+        
+    
+</body>
+<script>
+
+    //Integrando HTML Para profundizar en las bondades de utilizar e iterar sobre colecciones de datos. 
+    //Se solicita recorrer un objeto y mostrar en una tabla un documento HTML. 
+    //Lo que debemos mostrar, será la raza, origen, pelaje, peso y edad del arreglo perros:
+    
+    let perros = [{ // dos Objetos distintos
+            raza: 'Pastor Alemán', 
+            origen: 'Alemania', 
+            pelaje: 'Lanudo', 
+            peso: '33kg',
+            edad: 12,
+            }, 
+            {
+            raza: 'Poodle',
+            origen: 'Francia',
+            pelaje: 'Peludo',
+            peso: '20kg',
+            edad: 14
+        },
+     ];
+     var texto = "<tr><th>Raza</th><th>Origen</th><th>Pelaje</th><th>Peso</th ><th>Edad</th></tr>"; //tr =fila ; th=encabezados 
+     //entregar los datos a la tablo con un ciclo for
+for (var i = 0; i < perros.length; i++) { //para que no se pierda el resultado
+    texto += `<tr> 
+                <td>${perros[i].raza}</td>
+                <td>${perros[i].origen}</td>
+                <td>${perros[i].pelaje}</td>
+                <td>${perros[i].peso}</td>
+                <td>${perros[i].edad}</td>
+            </tr>`;
+}
+    document.getElementById("cuerpo-tabla").innerHTML = texto;
+</script>
+
+</html>

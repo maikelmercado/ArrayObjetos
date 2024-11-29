@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    //intanciar que existe en memoria 
+    //propiedades , Funciones
+    let perro = {
+        raza: 'Pastor Alemán', 
+        origen: 'Alemania', 
+        pelaje: 'Lanudo', 
+        peso: '33kg',
+        edad: 12,
+        amigable: true, 
+        sonidos: function(){
+        console.log('El perro ladra');
+   }
+};
+
+console.log(perro.raza);
+console.log(perro.peso);
+console.log(perro.amigable);
+
+console.log(perro['raza']);
+console.log(perro['peso']);
+console.log(perro['amigable']); //Ejecuta el código anterior y obtendrás el mismo resultado en ambos casos, por lo que es igual utilizar una notación u otra.
+
+//accediendo a un metodo dentro del objeto ()Parentesis
+console.log(perro.sonidos());
+console.log(perro['sonidos']());
+
+//Modificar el objeto
+    perro.peso = '30kg'; // sobre escribe la propiedad
+    perro.edad = 11;
+    perro.amigable = false;
+    console.log(perro);
+</script>
+</html>

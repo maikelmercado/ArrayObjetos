@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let perro = { propietario: {
+    nombre: 'Juan',
+    edad: 34,
+    lugar: {
+      pais: 'Chile',
+      ciudad: 'Santiago de Chile'
+},
+   },
+   raza: 'Pastor Alemán',
+   origen: 'Alemania',
+   pelaje: 'Lanudo',
+   peso: '30kg',
+   edad: 11,
+   amigable: true,
+};
+//recorre y muestra lo que esta propiedades
+var keys = Object.keys(perro); 
+    console.log(keys);
+
+//recorre y muestra lo que esta valores
+var values = Object.values(perro); 
+    console.log(values);    
+
+//para ver llaves y valores, un arreglo por par de datos
+var entries = Object.entries(perro); 
+    console.log(entries);    
+
+</script>
+</html>

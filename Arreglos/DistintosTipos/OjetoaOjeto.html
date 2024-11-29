@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    //Agregando objetos a un objeto
+    //Utilizar el siguiente objeto perro, al cual hemos agregado algunas propiedades como propietario y lugar.
+    let perro = { 
+        propietario: {
+        nombre: 'Juan',
+        edad: 34,
+        lugar: {
+                pais: 'Chile',
+                ciudad: 'Santiago de Chile'
+            },
+        },
+        raza: 'Pastor Alemán', 
+        origen: 'Alemania', 
+        pelaje: 'Lanudo', 
+        peso: '30kg',
+        edad: 11,
+        amigable: true, 
+        sonidos: function(){
+        console.log('El perro ladra');
+        } 
+    };
+
+    console.log(perro.propietario.nombre);
+    console.log(perro.propietario.lugar.pais);
+
+</script>
+</html>

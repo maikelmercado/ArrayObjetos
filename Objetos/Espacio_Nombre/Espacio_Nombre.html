@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let perro = { propietario: {
+    nombre: 'Juan',
+    edad: 34,
+    lugar: {
+      pais: 'Chile',
+      ciudad: 'Santiago de Chile'
+    },
+   },
+   raza: 'Pastor Alemán',
+   origen: 'Alemania',
+   pelaje: 'Lanudo',
+   peso: '30kg',
+   edad: 11,
+   amigable: true,
+   sonidos: function(){
+    console.log('El perro ladra')
+   },
+   datos: function(){
+    console.log(`la raza del perro es 
+    ${this.raza} tiene unda edad de  ${this.edad} Años y el propietario se llama ${this.propietario.nombre}`);
+   }
+};
+let perro2 = { propietario: {
+    nombre: 'Javier',
+    edad: 340,
+    lugar: {
+      pais: 'Chile',
+      ciudad: 'Santiago de Chile'
+    },
+   },
+   raza: 'chiguagua',
+   origen: 'Alemania',
+   pelaje: 'Lanudo',
+   peso: '30kg',
+   edad: 11,
+   amigable: true,
+   sonidos: function(){
+    console.log('El perro ladra')
+   },
+   datos: function(){
+    console.log(`la raza del perro es 
+    ${this.raza} tiene unda edad de  ${this.edad} Años y el propietario se llama ${this.propietario.nombre}`);
+   }
+};
+
+
+perro.datos();
+perro2.datos();
+</script>
+</html>

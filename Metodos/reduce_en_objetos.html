@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    //Con reduce podemos transformar los elementos de un array en un valor único. 
+    //Es de gran utilidad si por ejemplo, deseamos sumar dichos valores.
+            var clientes = [
+                {nombre: 'Juan', edad: 28},
+                {nombre: 'Carlos', edad: 17},
+                {nombre: 'Karla', edad: 27}];
+            var nombres = clientes.reduce(
+                function(acumulador, cliente){
+                return acumulador + ' | ' + cliente.nombre;
+                }, ''); // este detalle es el valor inicial del acumulador, para iniciar el valor del acumulador en cero
+            console.log(nombres);
+
+
+            let deudas = [10000,5000,500000,350000];
+            let total = deudas.reduce(function(contador,deuda){
+                return contador + deuda;
+            })
+            console.log(total);
+
+
+            
+</script>
+</html>
